@@ -18,7 +18,7 @@ jobs:
         env:
           ARCH: 'armhf'
           DIST: 'stretch'
-          APT: 'https://peramic.github.io/debian'
+          APT: 'https://menucha-de.github.io/debian'
           MIRROR: 'http://httpredir.debian.org/debian'
         id: build
       - name: Create Release

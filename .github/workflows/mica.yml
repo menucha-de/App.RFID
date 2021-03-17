@@ -5,15 +5,15 @@ on:
     inputs:
       image:
         description: 'Image'
-        default: 'https://github.com/peramic/Tools.Debootstrap/releases/download/v2.7.0/debian_stretch_2.7.0.tar.gz'
+        default: 'https://github.com/menucha-de/Tools.Debootstrap/releases/download/v2.7.0/debian_stretch_2.7.0.tar.gz'
         required: true
       maintainer:
         description: 'Maintainer'
-        default: "Open Source <opensource@peraMIC.io>"
+        default: "Menucha Team <info@menucha.de>"
         required: true
       support:
         description: 'Support'
-        default: "support@peraMIC.io"
+        default: "info@menucha.de"
         required: true
 jobs:
   build:
@@ -27,7 +27,7 @@ jobs:
         env:
           ARCH: 'armhf'
           DIST: 'stretch'
-          APT: 'https://peramic.github.io/debian'
+          APT: 'https://menucha-de.github.io/debian'
           MIRROR: 'http://httpredir.debian.org/debian'
           VERSION: ${{ github.event.inputs.version }}
           IMAGE: ${{ github.event.inputs.image }}
